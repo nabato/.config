@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<KeyAssignmentMap><command id="play"><key>0x20</key><key>0x4000050</key></command><command id="previous_track"><key>0x5000012</key></command><command id="next_track"><key>0x5000014</key></command><command id="volume_down"><key>0x2d</key></command><command id="volume_up"><key>0x3d</key></command></KeyAssignmentMap>
