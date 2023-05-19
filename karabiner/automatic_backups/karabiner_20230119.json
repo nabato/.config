@@ -1,0 +1,425 @@
+{
+  "global": {
+    "ask_for_confirmation_before_quitting": true,
+    "check_for_updates_on_startup": true,
+    "show_in_menu_bar": true,
+    "show_profile_name_in_menu_bar": false,
+    "unsafe_ui": false
+  },
+  "profiles": [
+    {
+      "complex_modifications": {
+        "parameters": {
+          "basic.simultaneous_threshold_milliseconds": 50,
+          "basic.to_delayed_action_delay_milliseconds": 500,
+          "basic.to_if_alone_timeout_milliseconds": 1000,
+          "basic.to_if_held_down_threshold_milliseconds": 500,
+          "mouse_motion_to_scroll.speed": 100
+        },
+        "rules": [
+            {
+            "description": "Caps Lock to Fn",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "caps_lock",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "fn"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Fn + I/J/K/L to Arrow Keys",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "i",
+                  "modifiers": {
+                    "mandatory": [
+                      "fn"
+                    ],
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "up_arrow"
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "key_code": "j",
+                  "modifiers": {
+                    "mandatory": [
+                      "fn"
+                    ],
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "left_arrow"
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "key_code": "k",
+                  "modifiers": {
+                    "mandatory": [
+                      "fn"
+                    ],
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "down_arrow"
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "key_code": "l",
+                  "modifiers": {
+                    "mandatory": [
+                      "fn"
+                    ],
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "right_arrow"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+{
+            "description": "Fn + H to Delete",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "h",
+                  "modifiers": {
+                    "mandatory": [
+                      "fn"
+                    ],
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "delete_or_backspace"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Fn + Any Key to Option + Control + Any Key",
+            "manipulators": [{"from":{"key_code":"return_or_enter","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"return_or_enter","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"escape","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"escape","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"delete_or_backspace","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"delete_or_backspace","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"delete_forward","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"delete_forward","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"tab","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"tab","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"spacebar","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"spacebar","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"hyphen","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"hyphen","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"equal_sign","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"equal_sign","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"open_bracket","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"open_bracket","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"close_bracket","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"close_bracket","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"backslash","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"backslash","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"non_us_pound","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"non_us_pound","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"semicolon","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"semicolon","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"quote","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"quote","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"grave_accent_and_tilde","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"grave_accent_and_tilde","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"comma","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"comma","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"period","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"period","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"slash","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"slash","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"non_us_backslash","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"non_us_backslash","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"up_arrow","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"up_arrow","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"down_arrow","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"down_arrow","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"left_arrow","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"left_arrow","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"right_arrow","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"right_arrow","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"page_up","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"page_up","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"page_down","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"page_down","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"home","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"home","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"end","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"end","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"a","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"a","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"b","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"b","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"c","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"c","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"d","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"d","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"e","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"e","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"f","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"f","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"g","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"g","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"h","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"h","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"i","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"i","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"j","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"j","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"k","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"k","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"l","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"l","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"m","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"m","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"n","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"n","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"o","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"o","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"p","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"p","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"q","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"q","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"r","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"r","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"s","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"s","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"t","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"t","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"u","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"u","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"v","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"v","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"w","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"w","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"x","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"x","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"y","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"y","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"z","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"z","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"1","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"1","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"2","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"2","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"3","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"3","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"4","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"4","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"5","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"5","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"6","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"6","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"7","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"7","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"8","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"8","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"9","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"9","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"0","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"0","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"f1","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"f1","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"f2","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"f2","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"f3","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"f3","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"f4","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"f4","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"f5","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"f5","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"f6","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"f6","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"f7","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"f7","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"f8","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"f8","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"f9","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"f9","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"f10","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"f10","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"f11","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"f11","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"f12","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"f12","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"f13","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"f13","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"f14","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"f14","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"f15","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"f15","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"f16","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"f16","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"f17","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"f17","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"f18","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"f18","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"f19","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"f19","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"f20","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"f20","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"f21","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"f21","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"f22","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"f22","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"f23","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"f23","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"f24","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"f24","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"keypad_num_lock","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"keypad_num_lock","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"keypad_slash","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"keypad_slash","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"keypad_asterisk","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"keypad_asterisk","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"keypad_hyphen","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"keypad_hyphen","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"keypad_plus","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"keypad_plus","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"keypad_enter","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"keypad_enter","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"keypad_1","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"keypad_1","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"keypad_2","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"keypad_2","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"keypad_3","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"keypad_3","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"keypad_4","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"keypad_4","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"keypad_5","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"keypad_5","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"keypad_6","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"keypad_6","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"keypad_7","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"keypad_7","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"keypad_8","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"keypad_8","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"keypad_9","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"keypad_9","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"keypad_0","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"keypad_0","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"keypad_period","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"keypad_period","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"keypad_equal_sign","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"keypad_equal_sign","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"keypad_comma","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"keypad_comma","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"vk_none","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"vk_none","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"print_screen","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"print_screen","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"scroll_lock","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"scroll_lock","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"pause","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"pause","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"insert","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"insert","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"application","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"application","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"help","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"help","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"power","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"power","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"execute","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"execute","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"menu","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"menu","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"select","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"select","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"stop","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"stop","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"again","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"again","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"undo","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"undo","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"cut","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"cut","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"copy","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"copy","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"paste","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"paste","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"find","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"find","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"international1","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"international1","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"international2","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"international2","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"international3","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"international3","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"international4","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"international4","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"international5","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"international5","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"international6","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"international6","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"international7","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"international7","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"international8","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"international8","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"international9","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"international9","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"lang1","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"lang1","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"lang2","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"lang2","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"lang3","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"lang3","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"lang4","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"lang4","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"lang5","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"lang5","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"lang6","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"lang6","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"lang7","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"lang7","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"lang8","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"lang8","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"lang9","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"lang9","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"japanese_eisuu","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"japanese_eisuu","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"japanese_kana","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"japanese_kana","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"japanese_pc_nfer","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"japanese_pc_nfer","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"japanese_pc_xfer","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"japanese_pc_xfer","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"japanese_pc_katakana","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"japanese_pc_katakana","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"keypad_equal_sign_as400","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"keypad_equal_sign_as400","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"locking_caps_lock","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"locking_caps_lock","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"locking_num_lock","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"locking_num_lock","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"locking_scroll_lock","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"locking_scroll_lock","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"alternate_erase","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"alternate_erase","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"sys_req_or_attention","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"sys_req_or_attention","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"cancel","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"cancel","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"clear","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"clear","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"prior","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"prior","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"return","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"return","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"separator","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"separator","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"out","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"out","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"oper","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"oper","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"clear_or_again","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"clear_or_again","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"cr_sel_or_props","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"cr_sel_or_props","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"ex_sel","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"ex_sel","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"left_alt","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"left_alt","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"left_gui","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"left_gui","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"right_alt","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"right_alt","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"right_gui","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"right_gui","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"vk_consumer_brightness_down","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"vk_consumer_brightness_down","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"vk_consumer_brightness_up","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"vk_consumer_brightness_up","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"vk_mission_control","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"vk_mission_control","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"vk_launchpad","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"vk_launchpad","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"vk_dashboard","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"vk_dashboard","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"vk_consumer_illumination_down","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"vk_consumer_illumination_down","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"vk_consumer_illumination_up","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"vk_consumer_illumination_up","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"vk_consumer_previous","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"vk_consumer_previous","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"vk_consumer_play","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"vk_consumer_play","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"vk_consumer_next","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"vk_consumer_next","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"volume_down","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"volume_down","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"volume_up","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"volume_up","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"display_brightness_decrement","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"display_brightness_decrement","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"display_brightness_increment","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"display_brightness_increment","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"rewind","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"rewind","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"play_or_pause","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"play_or_pause","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"fastforward","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"fastforward","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"mute","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"mute","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"volume_decrement","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"volume_decrement","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"volume_increment","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"volume_increment","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"apple_display_brightness_decrement","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"apple_display_brightness_decrement","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"apple_display_brightness_increment","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"apple_display_brightness_increment","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"dashboard","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"dashboard","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"launchpad","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"launchpad","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"mission_control","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"mission_control","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"fn","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"fn","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"apple_top_case_display_brightness_decrement","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"apple_top_case_display_brightness_decrement","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"apple_top_case_display_brightness_increment","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"apple_top_case_display_brightness_increment","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"illumination_decrement","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"illumination_decrement","modifiers":["option","control"]}],"type":"basic"},{"from":{"key_code":"illumination_increment","modifiers":{"mandatory":["fn"],"optional":["any"]}},"to":[{"key_code":"illumination_increment","modifiers":["option","control"]}],"type":"basic"}]
+
+          },
+          {
+            "description": "Disable arrows",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "left_arrow"
+                },
+                "to": [
+                  {
+                    "key_code": "vk_none"
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "key_code": "right_arrow"
+                },
+                "to": [
+                  {
+                    "key_code": "vk_none"
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "key_code": "up_arrow"
+                },
+                "to": [
+                  {
+                    "key_code": "vk_none"
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "key_code": "down_arrow"
+                },
+                "to": [
+                  {
+                    "key_code": "vk_none"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Disable Delete",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "delete_or_backspace"
+                },
+                "to": [
+                  {
+                    "key_code": "vk_none"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          }
+        ]
+      },
+      "devices": [
+        {
+          "disable_built_in_keyboard_if_exists": false,
+          "fn_function_keys": [],
+          "identifiers": {
+            "is_keyboard": true,
+            "is_pointing_device": false,
+            "product_id": 833,
+            "vendor_id": 1452
+          },
+          "ignore": false,
+          "manipulate_caps_lock_led": true,
+          "simple_modifications": [],
+          "treat_as_built_in_keyboard": false
+        },
+        {
+          "disable_built_in_keyboard_if_exists": false,
+          "fn_function_keys": [],
+          "identifiers": {
+            "is_keyboard": true,
+            "is_pointing_device": true,
+            "product_id": 45913,
+            "vendor_id": 1133
+          },
+          "ignore": false,
+          "manipulate_caps_lock_led": true,
+          "simple_modifications": [],
+          "treat_as_built_in_keyboard": true
+        },
+        {
+          "disable_built_in_keyboard_if_exists": false,
+          "fn_function_keys": [],
+          "identifiers": {
+            "is_keyboard": true,
+            "is_pointing_device": false,
+            "product_id": 834,
+            "vendor_id": 1452
+          },
+          "ignore": false,
+          "manipulate_caps_lock_led": true,
+          "simple_modifications": [],
+          "treat_as_built_in_keyboard": false
+        },
+        {
+          "disable_built_in_keyboard_if_exists": false,
+          "fn_function_keys": [],
+          "identifiers": {
+            "is_keyboard": false,
+            "is_pointing_device": true,
+            "product_id": 834,
+            "vendor_id": 1452
+          },
+          "ignore": true,
+          "manipulate_caps_lock_led": false,
+          "simple_modifications": [],
+          "treat_as_built_in_keyboard": false
+        },
+        {
+          "disable_built_in_keyboard_if_exists": false,
+          "fn_function_keys": [],
+          "identifiers": {
+            "is_keyboard": false,
+            "is_pointing_device": true,
+            "product_id": 613,
+            "vendor_id": 76
+          },
+          "ignore": true,
+          "manipulate_caps_lock_led": false,
+          "simple_modifications": [],
+          "treat_as_built_in_keyboard": false
+        }
+      ],
+      "fn_function_keys": [
+        {
+          "from": {
+            "key_code": "f1"
+          },
+          "to": [
+            {
+              "consumer_key_code": "display_brightness_decrement"
+            }
+          ]
+        },
+        {
+          "from": {
+            "key_code": "f2"
+          },
+          "to": [
+            {
+              "consumer_key_code": "display_brightness_increment"
+            }
+          ]
+        },
+        {
+          "from": {
+            "key_code": "f3"
+          },
+          "to": [
+            {
+              "apple_vendor_keyboard_key_code": "mission_control"
+            }
+          ]
+        },
+        {
+          "from": {
+            "key_code": "f4"
+          },
+          "to": [
+            {
+              "apple_vendor_keyboard_key_code": "spotlight"
+            }
+          ]
+        },
+        {
+          "from": {
+            "key_code": "f5"
+          },
+          "to": [
+            {
+              "consumer_key_code": "dictation"
+            }
+          ]
+        },
+        {
+          "from": {
+            "key_code": "f6"
+          },
+          "to": [
+            {
+              "key_code": "f6"
+            }
+          ]
+        },
+        {
+          "from": {
+            "key_code": "f7"
+          },
+          "to": [
+            {
+              "consumer_key_code": "rewind"
+            }
+          ]
+        },
+        {
+          "from": {
+            "key_code": "f8"
+          },
+          "to": [
+            {
+              "consumer_key_code": "play_or_pause"
+            }
+          ]
+        },
+        {
+          "from": {
+            "key_code": "f9"
+          },
+          "to": [
+            {
+              "consumer_key_code": "fast_forward"
+            }
+          ]
+        },
+        {
+          "from": {
+            "key_code": "f10"
+          },
+          "to": [
+            {
+              "consumer_key_code": "mute"
+            }
+          ]
+        },
+        {
+          "from": {
+            "key_code": "f11"
+          },
+          "to": [
+            {
+              "consumer_key_code": "volume_decrement"
+            }
+          ]
+        },
+        {
+          "from": {
+            "key_code": "f12"
+          },
+          "to": [
+            {
+              "consumer_key_code": "volume_increment"
+            }
+          ]
+        }
+      ],
+      "name": "Default profile",
+      "parameters": {
+        "delay_milliseconds_before_open_device": 1000
+      },
+      "selected": true,
+      "simple_modifications": [],
+      "virtual_hid_keyboard": {
+        "country_code": 0,
+        "indicate_sticky_modifier_keys_state": true,
+        "mouse_key_xy_scale": 100
+      }
+    }
+  ]
+}
